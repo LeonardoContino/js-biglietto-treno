@@ -35,3 +35,9 @@ const userAge = prompt("quanti hanni hai?").trim();
 // console.log(userAge);
 const price = kmnumber * 0.21;
 console.log(price);
+
+// se l'utente è minorenne (minore di 18 anni) il price è -20%
+if (userAge < 18) {
+  scontoMin = price - "20%";
+  console.log(scontoMin);
+}
