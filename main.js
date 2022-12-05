@@ -26,3 +26,6 @@ Disattivate live server: può darvi problemi coi prompt.
 6.modificare il prezzo finale a 2 decimali
 
 */
+
+const target = document.getElementById("target");
+console.log(target);
