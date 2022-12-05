@@ -18,7 +18,7 @@ Disattivate live server: può darvi problemi coi prompt.
 // scaletta
 
 /*
-1.prendere dal dol l'elemento
+1.prendere dall' html l'elemento
 2.chiedere all'utente il numero di chilometri che vuole fare
 3.chiedere all'utente la sua età
 4.calcolare il prezzo del biglietto
