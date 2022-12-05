@@ -30,4 +30,8 @@ Disattivate live server: può darvi problemi coi prompt.
 const target = document.getElementById("target");
 // console.log(target);
 const kmnumber = prompt("quanti chilometri vuoi fare?").trim();
-console.log(kmnumber);
+// console.log(kmnumber);
+const userAge = prompt("quanti hanni hai?").trim();
+// console.log(userAge);
+const price = kmnumber * 0.21;
+console.log(price);
