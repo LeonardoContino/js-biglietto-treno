@@ -29,18 +29,23 @@ Disattivate live server: può darvi problemi coi prompt.
 
 const target = document.getElementById("target");
 // console.log(target);
-const kmnumber = prompt("quanti chilometri vuoi fare?", 20).trim();
+const kmnumber = parseInt(prompt("quanti chilometri vuoi fare?", 20).trim());
 // console.log(kmnumber);
-const userAge = prompt("quanti hanni hai?", 22).trim();
+const userAge = parseInt(prompt("quanti hanni hai?", 22).trim());
 // console.log(userAge);
 let price = kmnumber * 0.21;
 console.log(price);
 
-// se l'utente è minorenne (minore di 18 anni) il price è -20%
+// se l'utente ha sconto
 
-if (userAge > 65) {
-  price = price * 0.6;
-} else if (age < 18) {
-  price = price * 0.8;
+if (isNaN(kmnumber || isNaN(userAge)) || kmnumber <= 0 || userAge <= 0) {
+  alert("i dati inseirti non sono corretti");
+} else {
+  if (userAge > 65) {
+    price = price * 0.6;
+  } else if (userAge < 18) {
+    price = price * 0.8;
+  }
 }
+
 target.innerText = price.toFixed(2) + "€";
